@@ -1,5 +1,46 @@
------
-VS
------
+----
+OS
+---
+windows 11
+-------------------
+Visual studio code 
+-------------------
 Not dtecting VE:
     Set-ExecutionPolicy RemoteSigned
+
+-------------------
+Certification Issue
+-------------------
+Open ssl install
+    Install for windows 
+
+------------
+windows
+---------
+
+set FLASK_APP=hello.py
+$env:FLASK_APP = "hello.py"
+flask run
+
+----------
+Linux
+---------
+export FLASK_APP=aplication.py
+export FLask_ENV=developement.py
+
+------
+Flask 
+------
+Db : Errors
+https://jtuto.com/python/runtimeerror-working-outside-of-application-context-flask/
+https://www.youtube.com/watch?v=ttc1sjUeCiA&ab_channel=PrettyPrinted
+
+=========================
+Instance SQL interaction
+=========================
+ with app.app_context():                                 
+...     db.create_all()
+...     db.session.add(Drink(name='Cherry',description='Woman'))
+...     db.session.commit()                                  '))
+... 
+Drinks.query.all()
